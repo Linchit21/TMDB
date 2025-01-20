@@ -1,0 +1,12 @@
+@import '@styles/helpers/';
+@import '@styles/global/';
+
+// body,
+// html {
+//   background-color: $black;
+// }
+
+body {
+  @include font-default;
+  color: $white;
+}

@@ -1,0 +1,51 @@
+@import '@styles/helpers/index.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $primary;
+
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+    width: 154px;
+    height: 20px;
+    background-image: url(/public/tmdb_header.svg);
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+    padding: 8px 0;
+  }
+
+  &__item {
+    padding: 8px 0;
+  }
+
+  &__language {
+    width: 26px;
+    height: 26px;
+  }
+
+  &__user {
+    text-align: center;
+    align-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    background-color: $secondary;
+  }
+
+  &__search {
+    width: 29px;
+    height: 29px;
+    background-image: url(/public/search_header.svg);
+  }
+}

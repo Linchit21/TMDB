@@ -1,4 +1,5 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter } from 'react-router';
+import { Layout } from '@components/Layout';
 // import { Layout } from './components/Layout';
 // import { Home } from '@/pages/Home';
 // import { Trends } from '@/pages/Trends';
@@ -13,55 +14,35 @@ import { createBrowserRouter } from "react-router";
 // import { ResultSearch } from './pages/ResultSearch';
 
 export const router = createBrowserRouter([
-  // {
-  //   // Метод Outlet router react dom
-  //   element: <Layout />,
-  //   children: [
-  //     {
-  //       path: '/',
-  //       element: <Home />,
-  //     },
-  //     {
-  //       path: '/trends',
-  //       element: <Trends />,
-  //     },
-  //     {
-  //       path: '/movie/:movieId',
-  //       element: <Movie />,
-  //     },
-  //     {
-  //       path: '/favorites',
-  //       element: <Favorites />,
-  //     },
-  //     {
-  //       path: '/search/:keyword',
-  //       element: <ResultSearch />,
-  //     },
-  //     {
-  //       path: '/settings',
-  //       element: <Settings />,
-  //     },
-  //   ],
-  // },
-  // {
-  //   element: <UnauthorizedLayout />,
-  //   children: [
-  //     {
-  //       path: '/auth/sign-in',
-  //       element: <SignInForm />,
-  //     },
-  //     {
-  //       path: '/auth/sign-up',
-  //       element: <SignUpForm />,
-  //     },
-  //     {
-  //       path: '/auth/activation/:uid/:token',
-  //       element: <AuthActivation />,
-  //     },
-  //     {
-  //       path: '/auth/email',
-  //       element: <RegistrationConfirm />,
-  //     },
-  //   ],
+  {
+    // Метод Outlet router react dom
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <></>,
+      },
+    ],
+  },
+  //   {
+  //     element: <UnauthorizedLayout />,
+  //     children: [
+  //       {
+  //         path: '/auth/sign-in',
+  //         element: <SignInForm />,
+  //       },
+  //       {
+  //         path: '/auth/sign-up',
+  //         element: <SignUpForm />,
+  //       },
+  //       {
+  //         path: '/auth/activation/:uid/:token',
+  //         element: <AuthActivation />,
+  //       },
+  //       {
+  //         path: '/auth/email',
+  //         element: <RegistrationConfirm />,
+  //       },
+  //     ],
   // },
 ]);
